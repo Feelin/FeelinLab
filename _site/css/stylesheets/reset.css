@@ -1,0 +1,22 @@
+/* line 1, ../sass/reset.scss */
+.container {
+  width: 980px;
+  margin: 0 auto;
+}
+
+/* line 5, ../sass/reset.scss */
+li {
+  list-style-type: none;
+}
+
+/* line 8, ../sass/reset.scss */
+.acticle-box {
+  max-height: 200px;
+  overflow: hidden;
+}
+
+/* line 12, ../sass/reset.scss */
+.acticle-title {
+  font-size: 18px;
+  color: #ff5000;
+}
