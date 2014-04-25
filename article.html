@@ -5,12 +5,12 @@ title: FeelinLab
 
 <div class="row">
 <div class="col-9">
-  <h1>Article List</h1>
+  <h1 class="page-title">Article List</h1>
   <ul class="posts">
     {% for post in site.posts %}
       <li class="acticle-box" class="{{ post.categories }}"> 
         <span class="acticle-title" >{{ post.title }}</span> 
-        <span>{{ post.date | date_to_string }}</span>
+        <span class="date">{{ post.date | date_to_string }}</span>
         <div class="acticle-content">{{post.content}}</div>
       </li>
       <a class="pull-right" class="readmore" href="{{ site.baseurl }}{{ post.url }}">readmore</a>
@@ -21,14 +21,17 @@ title: FeelinLab
 </div>
 
 <div class="col-3">
-    {% for category in site.categories %}
-    <span>{{ category | first }}</span>
-    </span>( {{ category | last | size }} )</span>
+     {% for category in site.categories %}
+    <div class="row danger featured">
+        <span class-"category">{{ category | first }}</span>
+        <span class="category-size">({{ category | last | size }})</span>
     <ul class="arc-list">
         {% for post in category.last %}
-            <li><a href="{{ post.url }}">{{ post.title }}</a>{{ post.date | date:"%d/%m/%Y"}}</li>
+            <li><a class="category-link" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+            <span class="category-date pull-right">{{ post.date | date:"%d/%m/%Y"}}</span></li>
         {% endfor %}
     </ul>
-    {% endfor %}
+    </div>
+    {% endfor %} 
 </div>
 </div>

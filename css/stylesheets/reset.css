@@ -1,22 +1,82 @@
-/* line 1, ../sass/reset.scss */
+/* line 7, ../sass/reset.scss */
+html {
+  height: 100%;
+}
+
+/* line 10, ../sass/reset.scss */
+body {
+  min-height: 100%;
+  padding-bottom: 180px;
+  position: relative;
+  height: auto;
+}
+
+/* line 16, ../sass/reset.scss */
 .container {
   width: 980px;
   margin: 0 auto;
 }
 
-/* line 5, ../sass/reset.scss */
+/* line 20, ../sass/reset.scss */
 li {
   list-style-type: none;
 }
 
-/* line 8, ../sass/reset.scss */
+/* line 23, ../sass/reset.scss */
 .acticle-box {
-  max-height: 200px;
+  max-height: 253px;
   overflow: hidden;
 }
 
-/* line 12, ../sass/reset.scss */
+/* line 27, ../sass/reset.scss */
 .acticle-title {
-  font-size: 18px;
+  font-size: 22px;
   color: #ff5000;
+}
+
+/* line 31, ../sass/reset.scss */
+.date {
+  color: #cccccc;
+}
+
+/* line 34, ../sass/reset.scss */
+.acticle-content {
+  color: #333333;
+}
+
+/* line 37, ../sass/reset.scss */
+.featured {
+  padding: 15px;
+  color: #fff;
+}
+
+/* line 41, ../sass/reset.scss */
+.category {
+  font-weight: bold;
+}
+
+/* line 44, ../sass/reset.scss */
+.category-link {
+  color: #fff;
+}
+
+/* line 50, ../sass/reset.scss */
+#trigger {
+  font-weight: bold;
+}
+
+/* line 53, ../sass/reset.scss */
+.page-title {
+  color: #00ac6b;
+}
+
+/* line 56, ../sass/reset.scss */
+.footer {
+  background: #303338;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 180px;
+  margin-top: -180px;
+  width: 100%;
 }

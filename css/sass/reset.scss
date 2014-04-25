@@ -1,3 +1,18 @@
+$color-warm:#ff5000;
+$color-cold:#00AC6B;
+$color-date:#cccccc;
+$color-text:#333333;
+$acticle-height:253px;
+$color-footer:#303338;
+html {
+    height: 100%;
+}
+body {
+    min-height: 100%;
+    padding-bottom: 180px;
+    position: relative;
+    height: auto;
+}
 .container {
     width: 980px;
     margin: 0 auto;
@@ -6,10 +21,46 @@ li {
     list-style-type: none;
 }
 .acticle-box {
-    max-height: 200px;
+    max-height: $acticle-height;
     overflow: hidden;
 }
 .acticle-title {
-    font-size: 18px;
-    color: #ff5000;
+    font-size: 22px;
+    color: $color-warm;
 }
+.date {
+    color: $color-date;
+}
+.acticle-content {
+    color: $color-text;
+}
+.featured{
+    padding: 15px;
+    color: #fff;
+}
+.category {
+    font-weight: bold;
+}
+.category-link{
+    color: #fff;
+}
+.category-date{
+
+}
+#trigger{
+    font-weight: bold;
+}
+.page-title {
+    color: $color-cold;
+}
+.footer {
+    background: #303338;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 180px;
+    margin-top: -180px;
+    width: 100%;
+}
+
+
