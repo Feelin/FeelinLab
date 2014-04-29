@@ -2,3 +2,5 @@ name: FeelinLab
 markdown: redcarpet
 pygments: true
 baseurl: /FeelinLab
+author: william                                    
+email: williamgeeker@gmail.com

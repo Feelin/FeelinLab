@@ -4,8 +4,8 @@ $(function(){
         $(this).stop().animate({
             width:"40%",
         },1000).find(".card-title").stop().animate({
-                "font-size":"37px",
-                "line-height":"40px"
+                "font-size":"50px",
+                "line-height":"55px"
             },1000).end().find(".iconfont").stop().animate({
                 "font-size":"100px"
             },1000).end().find(".full").css("display","block");

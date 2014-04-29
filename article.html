@@ -1,32 +1,32 @@
 ---
-layout: default
-title: FeelinLab
+layout: article
+title: Article
+name: article
 ---
 
 <div class="row">
 <div class="col-9">
   <h1 class="page-title">Article List</h1>
   <ul class="posts">
-    {% for post in site.posts %}
+    {% for post in site.categories[page.name]  %}
       <li class="acticle-box" class="{{ post.categories }}"> 
         <span class="acticle-title" >{{ post.title }}</span> 
         <span class="date">{{ post.date | date_to_string }}</span>
-        <div class="acticle-content">{{post.content}}</div>
+        <div class="acticle-content">{{ post.excerpt }}</div>
       </li>
       <a class="pull-right" class="readmore" href="{{ site.baseurl }}{{ post.url }}">readmore</a>
       <hr>
- 
     {% endfor %}
   </ul>
 </div>
 
 <div class="col-3">
-     {% for category in site.categories %}
+     {% for tags in site.tags %}
     <div class="row danger featured">
-        <span class-"category">{{ category | first }}</span>
-        <span class="category-size">({{ category | last | size }})</span>
+        <span class-"category">{{ tags | first }}</span>
+        <span class="category-size">({{ tags | last | size }})</span>
     <ul class="arc-list">
-        {% for post in category.last %}
+        {% for post in tags.last %}
             <li><a class="category-link" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
             <span class="category-date pull-right">{{ post.date | date:"%d/%m/%Y"}}</span></li>
         {% endfor %}

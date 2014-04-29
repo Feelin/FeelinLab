@@ -68,9 +68,10 @@ li {
 /* line 53, ../sass/reset.scss */
 .page-title {
   color: #00ac6b;
+  font-size: 30px;
 }
 
-/* line 56, ../sass/reset.scss */
+/* line 57, ../sass/reset.scss */
 .footer {
   background: #303338;
   position: absolute;
@@ -79,4 +80,9 @@ li {
   height: 180px;
   margin-top: -180px;
   width: 100%;
+}
+
+/* line 66, ../sass/reset.scss */
+.page-date {
+  color: #ccc;
 }
