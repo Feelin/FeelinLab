@@ -103,34 +103,33 @@ html, body, .home {
   font-size: 27px;
   line-height: 30px;
   position: relative;
-  cursor: pointer;
 }
 
-/* line 55, ../sass/homepage.scss */
+/* line 54, ../sass/homepage.scss */
 .site-name-even {
   color: #00ac6b !important;
 }
 
-/* line 58, ../sass/homepage.scss */
+/* line 57, ../sass/homepage.scss */
 .site-name-odd {
   color: #35d699 !important;
 }
 
-/* line 61, ../sass/homepage.scss */
-.card:nth-child(even) {
+/* line 60, ../sass/homepage.scss */
+.card-even {
   width: 30%;
   background: #35d699;
   color: #00ac6b;
 }
 
-/* line 66, ../sass/homepage.scss */
-.card:nth-child(odd) {
+/* line 65, ../sass/homepage.scss */
+.card-odd {
   width: 20%;
   background: #00ac6b;
   color: #35d699;
 }
 
-/* line 71, ../sass/homepage.scss */
+/* line 70, ../sass/homepage.scss */
 .site-name {
   font-size: 100px;
   position: absolute;
@@ -140,7 +139,7 @@ html, body, .home {
   letter-spacing: 0px;
 }
 
-/* line 79, ../sass/homepage.scss */
+/* line 78, ../sass/homepage.scss */
 .full {
   position: absolute;
   top: 28px;
@@ -149,26 +148,26 @@ html, body, .home {
   display: none;
 }
 
-/* line 86, ../sass/homepage.scss */
+/* line 85, ../sass/homepage.scss */
 .card-title {
   position: absolute;
   top: 20px;
   left: 30px;
 }
 
-/* line 91, ../sass/homepage.scss */
+/* line 90, ../sass/homepage.scss */
 .card-logo {
   position: absolute;
   bottom: 50px;
   right: 40px;
 }
 
-/* line 96, ../sass/homepage.scss */
+/* line 95, ../sass/homepage.scss */
 .iconfont {
   font-size: 50px;
 }
 
-/* line 99, ../sass/homepage.scss */
+/* line 98, ../sass/homepage.scss */
 .card:hover {
   color: #fff;
 }

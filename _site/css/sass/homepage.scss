@@ -50,7 +50,6 @@ html,body,.home{
   font-size: 27px;
   line-height: 30px;
   position: relative;
-  cursor: pointer;
 }
 .site-name-even{
   color: $dark !important;
@@ -58,12 +57,12 @@ html,body,.home{
 .site-name-odd{
   color: $light !important;
 }
-.card:nth-child(even){
+.card-even{
   width: 30%;
   background: $light;
   color: $dark;
 }
-.card:nth-child(odd){
+.card-odd{
   width: 20%;
   background: $dark;
   color: $light;
