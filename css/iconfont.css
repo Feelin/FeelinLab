@@ -1,0 +1,98 @@
+@font-face {font-family: 'iconfont';
+  src: url('iconfont.eot'); /* IE9*/
+  src: url('iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('iconfont.woff') format('woff'), /* chrome、firefox */
+  url('iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:50px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.icon-hebing:before { content: "\f0002"; }
+
+.icon-jiedian:before { content: "\f0004"; }
+
+.icon-fengbi:before { content: "\f0003"; }
+
+.icon-duosucai:before { content: "\f0119"; }
+
+.icon-html:before { content: "\f01c2"; }
+
+.icon-css:before { content: "\f01c3"; }
+
+.icon-daimawenjian:before { content: "\f01c6"; }
+
+.icon-github:before { content: "\f01ca"; }
+
+.icon-html5:before { content: "\f01ee"; }
+
+.icon-tianchengzuo:before { content: "\f0012"; }
+
+.icon-tianse:before { content: "\f0001"; }
+
+.icon-wenzhang:before { content: "\f0042"; }
+
+.icon-tupian:before { content: "\f0044"; }
+
+.icon-dianyingpiao:before { content: "\f003a"; }
+
+.icon-zhezhi:before { content: "\f0047"; }
+
+.icon-dianshiji:before { content: "\f0099"; }
+
+.icon-shouji:before { content: "\f00a2"; }
+
+.icon-caidai:before { content: "\f00b1"; }
+
+.icon-chuangyi:before { content: "\f00ba"; }
+
+.icon-bingtu:before { content: "\f00cd"; }
+
+.icon-shuzhuangtu:before { content: "\f00ce"; }
+
+.icon-quxiantu:before { content: "\f00cf"; }
+
+.icon-zhexiantu:before { content: "\f00d0"; }
+
+.icon-jinbizhuanchu:before { content: "\f00ee"; }
+
+.icon-shouye:before { content: "\f012b"; }
+
+.icon-mingpian:before { content: "\f0136"; }
+
+.icon-tupian1:before { content: "\f0137"; }
+
+.icon-youjian:before { content: "\f0138"; }
+
+.icon-biaoqian:before { content: "\f0152"; }
+
+.icon-zhaoxiangji:before { content: "\f0151"; }
+
+.icon-bianji:before { content: "\f014f"; }
+
+.icon-haoyou:before { content: "\f014b"; }
+
+.icon-weizhi:before { content: "\f014a"; }
+
+.icon-wenbenshuru:before { content: "\f0158"; }
+
+.icon-xieti:before { content: "\f0188"; }
+
+.icon-xinlangweibo:before { content: "\f01af"; }
+
+.icon-lianjie:before { content: "\f01ae"; }
+
+.icon-xuanze:before { content: "\f01ec"; }
+
+.icon-dingxiang:before { content: "\f0295"; }
+
+.icon-suoding:before { content: "\f018b"; }
+

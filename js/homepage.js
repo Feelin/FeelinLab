@@ -1,0 +1,24 @@
+$(function(){
+    $(".card").hover(function(){
+        $(".card:odd").stop().animate({width:"20%"},500);
+        $(this).stop().animate({
+            width:"40%",
+        },1000).find(".card-title").stop().animate({
+                "font-size":"37px",
+                "line-height":"40px"
+            },1000).end().find(".iconfont").stop().animate({
+                "font-size":"100px"
+            },1000).end().find(".full").css("display","block");
+    },function(){
+        var width = $(this).attr("data-width")+"%";
+        $(".card:odd").stop().animate({width:"30%"},1000);
+         $(this).stop().animate({
+            width:width,
+        },500).find(".card-title").stop().animate({
+                "font-size":"27px",
+                "line-height":"30px"
+            },500).end().find(".iconfont").stop().animate({
+                "font-size":"50px"
+            },500).end().find(".full").css("display","none");;
+    }); 
+});
