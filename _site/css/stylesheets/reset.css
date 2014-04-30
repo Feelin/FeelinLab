@@ -125,35 +125,36 @@ li {
   height: 20px;
   line-height: 20px;
   margin: 7px 10px 0px 0px;
+  font-weight: bold;
 }
 
-/* line 101, ../sass/reset.scss */
+/* line 102, ../sass/reset.scss */
 .readmore {
   height: 25px;
   display: block;
 }
 
-/* line 105, ../sass/reset.scss */
+/* line 106, ../sass/reset.scss */
 .nav-link {
   text-align: center;
 }
 
-/* line 108, ../sass/reset.scss */
+/* line 109, ../sass/reset.scss */
 .danger {
   margin-left: 10px;
 }
 
-/* line 112, ../sass/reset.scss */
+/* line 113, ../sass/reset.scss */
 .icon-small {
   font-size: 15px !important;
 }
 
-/* line 115, ../sass/reset.scss */
+/* line 116, ../sass/reset.scss */
 .icon-middle {
   font-size: 30px !important;
 }
 
-/* line 119, ../sass/reset.scss */
+/* line 120, ../sass/reset.scss */
 .copyright {
   position: absolute;
   bottom: 0px;
@@ -161,13 +162,13 @@ li {
   font-size: 14px;
 }
 
-/* line 126, ../sass/reset.scss */
+/* line 127, ../sass/reset.scss */
 .footer-item {
   height: 40px;
   width: 250px;
 }
 
-/* line 130, ../sass/reset.scss */
+/* line 131, ../sass/reset.scss */
 .footer-info {
   padding-top: 25px;
   width: 500px;
