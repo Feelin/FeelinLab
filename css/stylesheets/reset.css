@@ -151,26 +151,39 @@ li {
 
 /* line 116, ../sass/reset.scss */
 .icon-middle {
-  font-size: 30px !important;
+  font-size: 22px !important;
 }
 
 /* line 120, ../sass/reset.scss */
+.download {
+  line-height: 15px;
+}
+
+/* line 123, ../sass/reset.scss */
 .copyright {
   position: absolute;
   bottom: 0px;
   right: 0px;
   font-size: 14px;
-}
-
-/* line 127, ../sass/reset.scss */
-.footer-item {
-  height: 40px;
-  width: 250px;
+  color: #666;
 }
 
 /* line 131, ../sass/reset.scss */
+.footer-item {
+  height: 40px;
+  width: 230px;
+}
+
+/* line 135, ../sass/reset.scss */
 .footer-info {
-  padding-top: 25px;
+  padding-top: 40px;
   width: 500px;
   height: 150px;
+}
+
+/* line 140, ../sass/reset.scss */
+.resume {
+  position: absolute;
+  bottom: 20px;
+  right: 0;
 }

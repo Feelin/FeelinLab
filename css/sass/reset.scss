@@ -114,24 +114,32 @@ li {
     font-size: 15px !important;
 }
 .icon-middle {
-    font-size: 30px !important;
+    font-size: 22px !important;
 
+}
+.download{
+    line-height: 15px;
 }
 .copyright {
     position: absolute;
     bottom: 0px;
     right: 0px;
     font-size: 14px;
+    color: #666;
 }
 
 .footer-item {
     height: 40px;
-    width: 250px;
+    width: 230px;
 }
 .footer-info {
-    padding-top: 25px;
+    padding-top: 40px;
     width: 500px;
     height: 150px;
 }
-
+.resume {
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+}
 

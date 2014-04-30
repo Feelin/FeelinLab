@@ -2,6 +2,7 @@
 layout: article
 title: Article
 name: article
+tags: [web,js,html,css]
 ---
 
 <div class="row">
@@ -9,7 +10,7 @@ name: article
   <h1 class="page-title">最新文章</h1>
   <ul class="posts">
   <hr>
-    {% for post in site.categories[page.name]  %}
+    {% for post in site.categories[page.name] %}
       <li class="acticle-box" class="{{ post.categories }}"> 
         <div class="this-tag pull-left">{{ post.tags[0] }}</div>
         <span class="acticle-title" >{{ post.title }}</span> 
@@ -17,7 +18,7 @@ name: article
         <div class="acticle-content">{{ post.excerpt }}</div>
       </li>
       <div class="pull-right">
-        <a class="readmore" href="{{ site.baseurl }}{{ post.url }}">继续阅读 <i class="iconfont icon-jinbizhuanchu icon-small"></i></a>
+        <a class="readmore" href="{{ site.baseurl }}{{ post.url }}">继续阅读 <i class="iconfont icon-jinru icon-small"></i></a>
       </div>
       <hr>
     {% endfor %}
@@ -28,11 +29,17 @@ name: article
     <div class="row danger featured">
     <span class="tags-title"><i class="iconfont icon-biaoqian icon-small"></i>&nbsp;相关标签</span>
      {% for tags in site.tags %}
-      <div class="tags-item">
-       <a class="tags-name" href="#"> {{ tags | first }} </a>
-       <span class="tags-size" href="#">({{ tags | last | size }})</span>
-      </div>
-    
+     {% for pagetag in page.tags %}
+        {% if pagetag == tags[0] %}
+          <div class="tags-item">
+           <a class="tags-name" href="#"> {{ tags | first }} </a>
+           <span class="tags-size" href="#">({{ tags | last | size }})</span>
+          </div>
+        {% endif %}
+     {% endfor %}
+
+  
+
     {% endfor %} 
     </div>
 </div>
