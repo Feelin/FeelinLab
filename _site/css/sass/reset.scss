@@ -4,6 +4,11 @@ $color-date:#cccccc;
 $color-text:#333333;
 $acticle-height:253px;
 $color-footer:#303338;
+$dark:#00AC6B;
+$light:#35D699;
+hr{
+    margin: 5px 0;
+}
 html {
     height: 100%;
 }
@@ -25,11 +30,13 @@ li {
     overflow: hidden;
 }
 .acticle-title {
-    font-size: 22px;
+    font-size: 25px;
+    line-height: 30px;
     color: $color-warm;
 }
 .date {
     color: $color-date;
+    font-size: 14px;
 }
 .acticle-content {
     color: $color-text;
@@ -38,15 +45,20 @@ li {
     padding: 15px;
     color: #fff;
 }
-.category {
-    font-weight: bold;
+.tags-item {
+    padding: 5px;
 }
-.category-link{
+.tags-name,{
     color: #fff;
 }
-.category-date{
-
+.tags-title {
+    font-weight: bold;
+    color: #fff;
 }
+.tags-link {
+    color: #fff;
+}
+
 #trigger{
     font-weight: bold;
 }
@@ -63,8 +75,33 @@ li {
     margin-top: -180px;
     width: 100%;
 }
-.page-date {
-    color: #ccc;
+
+.this-tag{
+    background: $light;
+    color: #fff;
+    border-radius: 15px; 
+    padding: 1px;
+    font-size: 12px;
+    width: 50px;
+    text-align: center;
+    margin-bottom: 5px;
+    height: 20px;
+    line-height: 20px;
+    margin: 7px 10px 0px 0px;
+}
+.readmore {
+    height: 25px;
+    display: block;
+}
+.nav-link {
+    text-align: center;
+}
+.danger {
+    margin-left: 10px;
+}
+
+.icon-small {
+    font-size: 14px !important;
 }
 
 

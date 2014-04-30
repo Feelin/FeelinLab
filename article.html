@@ -6,32 +6,34 @@ name: article
 
 <div class="row">
 <div class="col-9">
-  <h1 class="page-title">Article List</h1>
+  <h1 class="page-title">最新文章</h1>
   <ul class="posts">
+  <hr>
     {% for post in site.categories[page.name]  %}
       <li class="acticle-box" class="{{ post.categories }}"> 
+        <div class="this-tag pull-left">{{ post.tags[0] }}</div>
         <span class="acticle-title" >{{ post.title }}</span> 
-        <span class="date">{{ post.date | date_to_string }}</span>
+        <span class="date pull-right">{{ post.date | date_to_string }}</span>
         <div class="acticle-content">{{ post.excerpt }}</div>
       </li>
-      <a class="pull-right" class="readmore" href="{{ site.baseurl }}{{ post.url }}">readmore</a>
+      <div class="pull-right">
+        <a class="readmore" href="{{ site.baseurl }}{{ post.url }}">继续阅读</a>
+      </div>
       <hr>
     {% endfor %}
   </ul>
 </div>
 
 <div class="col-3">
-     {% for tags in site.tags %}
     <div class="row danger featured">
-        <span class-"category">{{ tags | first }}</span>
-        <span class="category-size">({{ tags | last | size }})</span>
-    <ul class="arc-list">
-        {% for post in tags.last %}
-            <li><a class="category-link" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-            <span class="category-date pull-right">{{ post.date | date:"%d/%m/%Y"}}</span></li>
-        {% endfor %}
-    </ul>
-    </div>
+    <span class="tags-title"><i class="iconfont icon-biaoqian icon-small"></i>&nbsp;tags</span>
+     {% for tags in site.tags %}
+      <div class="tags-item">
+       <a class="tags-name" href="#"> {{ tags | first }} </a>
+       <span class="tags-size" href="#">({{ tags | last | size }})</span>
+      </div>
+    
     {% endfor %} 
+    </div>
 </div>
 </div>

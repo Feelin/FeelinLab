@@ -3,7 +3,7 @@ layout: post
 title:  "jekyll deom"
 date:   2014-04-24 18:09:33
 categories: code
-tags: xixi
+tags: web
 keywords: Jekyll,Github
 description:
 ---

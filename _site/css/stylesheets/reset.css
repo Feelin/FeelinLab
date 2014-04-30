@@ -1,9 +1,14 @@
-/* line 7, ../sass/reset.scss */
+/* line 9, ../sass/reset.scss */
+hr {
+  margin: 5px 0;
+}
+
+/* line 12, ../sass/reset.scss */
 html {
   height: 100%;
 }
 
-/* line 10, ../sass/reset.scss */
+/* line 15, ../sass/reset.scss */
 body {
   min-height: 100%;
   padding-bottom: 180px;
@@ -11,67 +16,80 @@ body {
   height: auto;
 }
 
-/* line 16, ../sass/reset.scss */
+/* line 21, ../sass/reset.scss */
 .container {
   width: 980px;
   margin: 0 auto;
 }
 
-/* line 20, ../sass/reset.scss */
+/* line 25, ../sass/reset.scss */
 li {
   list-style-type: none;
 }
 
-/* line 23, ../sass/reset.scss */
+/* line 28, ../sass/reset.scss */
 .acticle-box {
   max-height: 253px;
   overflow: hidden;
 }
 
-/* line 27, ../sass/reset.scss */
+/* line 32, ../sass/reset.scss */
 .acticle-title {
-  font-size: 22px;
+  font-size: 25px;
+  line-height: 30px;
   color: #ff5000;
 }
 
-/* line 31, ../sass/reset.scss */
+/* line 37, ../sass/reset.scss */
 .date {
   color: #cccccc;
+  font-size: 14px;
 }
 
-/* line 34, ../sass/reset.scss */
+/* line 41, ../sass/reset.scss */
 .acticle-content {
   color: #333333;
 }
 
-/* line 37, ../sass/reset.scss */
+/* line 44, ../sass/reset.scss */
 .featured {
   padding: 15px;
   color: #fff;
 }
 
-/* line 41, ../sass/reset.scss */
-.category {
-  font-weight: bold;
+/* line 48, ../sass/reset.scss */
+.tags-item {
+  padding: 5px;
 }
 
-/* line 44, ../sass/reset.scss */
-.category-link {
+/* line 51, ../sass/reset.scss */
+.tags-name {
   color: #fff;
 }
 
-/* line 50, ../sass/reset.scss */
+/* line 54, ../sass/reset.scss */
+.tags-title {
+  font-weight: bold;
+  color: #fff;
+}
+
+/* line 58, ../sass/reset.scss */
+.tags-link {
+  color: #fff;
+}
+
+/* line 62, ../sass/reset.scss */
 #trigger {
   font-weight: bold;
 }
 
-/* line 53, ../sass/reset.scss */
+/* line 65, ../sass/reset.scss */
 .page-title {
   color: #00ac6b;
   font-size: 30px;
 }
 
-/* line 57, ../sass/reset.scss */
+/* line 69, ../sass/reset.scss */
 .footer {
   background: #303338;
   position: absolute;
@@ -82,7 +100,38 @@ li {
   width: 100%;
 }
 
-/* line 66, ../sass/reset.scss */
-.page-date {
-  color: #ccc;
+/* line 79, ../sass/reset.scss */
+.this-tag {
+  background: #35d699;
+  color: #fff;
+  border-radius: 15px;
+  padding: 1px;
+  font-size: 12px;
+  width: 50px;
+  text-align: center;
+  margin-bottom: 5px;
+  height: 20px;
+  line-height: 20px;
+  margin: 7px 10px 0px 0px;
+}
+
+/* line 92, ../sass/reset.scss */
+.readmore {
+  height: 25px;
+  display: block;
+}
+
+/* line 96, ../sass/reset.scss */
+.nav-link {
+  text-align: center;
+}
+
+/* line 99, ../sass/reset.scss */
+.danger {
+  margin-left: 10px;
+}
+
+/* line 103, ../sass/reset.scss */
+.icon-small {
+  font-size: 14px !important;
 }
