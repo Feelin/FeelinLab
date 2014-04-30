@@ -17,7 +17,7 @@ layout: article
     {% for tags in site.tags %}
     {% if tags[0] == page.tags[0] %}
     <div class="row danger featured">
-        <span class="tags-title">相关文章</span>
+        <span class="tags-title"><i class="iconfont icon-lianjie icon-small"></i>&nbsp;相关文章</span>
     <ul class="arc-list">
         {% for post in tags.last %}
             <li><a class="tags-link" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
