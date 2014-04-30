@@ -160,3 +160,16 @@ li {
   right: 0px;
   font-size: 14px;
 }
+
+/* line 126, ../sass/reset.scss */
+.footer-item {
+  height: 40px;
+  width: 250px;
+}
+
+/* line 130, ../sass/reset.scss */
+.footer-info {
+  padding-top: 25px;
+  width: 500px;
+  height: 150px;
+}
