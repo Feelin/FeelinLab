@@ -6,11 +6,16 @@ $acticle-height:253px;
 $color-footer:#303338;
 $dark:#00AC6B;
 $light:#35D699;
+$footer-text:#8B919B;
+
 hr{
     margin: 5px 0;
 }
 html {
     height: 100%;
+}
+a:hover{
+    text-decoration: none;
 }
 body {
     min-height: 100%;
@@ -21,6 +26,7 @@ body {
 .container {
     width: 980px;
     margin: 0 auto;
+    position: relative;
 }
 li {
     list-style-type: none;
@@ -74,8 +80,11 @@ li {
     height: 180px;
     margin-top: -180px;
     width: 100%;
+    color: $footer-text;
 }
-
+.footer a {
+    color: $footer-text;
+}
 .this-tag{
     background: $light;
     color: #fff;
@@ -101,8 +110,17 @@ li {
 }
 
 .icon-small {
-    font-size: 14px !important;
+    font-size: 15px !important;
 }
+.icon-middle {
+    font-size: 30px !important;
 
+}
+.copyright {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    font-size: 14px;
+}
 
 

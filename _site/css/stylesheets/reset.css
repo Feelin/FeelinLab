@@ -1,14 +1,19 @@
-/* line 9, ../sass/reset.scss */
+/* line 11, ../sass/reset.scss */
 hr {
   margin: 5px 0;
 }
 
-/* line 12, ../sass/reset.scss */
+/* line 14, ../sass/reset.scss */
 html {
   height: 100%;
 }
 
-/* line 15, ../sass/reset.scss */
+/* line 17, ../sass/reset.scss */
+a:hover {
+  text-decoration: none;
+}
+
+/* line 20, ../sass/reset.scss */
 body {
   min-height: 100%;
   padding-bottom: 180px;
@@ -16,80 +21,81 @@ body {
   height: auto;
 }
 
-/* line 21, ../sass/reset.scss */
+/* line 26, ../sass/reset.scss */
 .container {
   width: 980px;
   margin: 0 auto;
+  position: relative;
 }
 
-/* line 25, ../sass/reset.scss */
+/* line 31, ../sass/reset.scss */
 li {
   list-style-type: none;
 }
 
-/* line 28, ../sass/reset.scss */
+/* line 34, ../sass/reset.scss */
 .acticle-box {
   max-height: 253px;
   overflow: hidden;
 }
 
-/* line 32, ../sass/reset.scss */
+/* line 38, ../sass/reset.scss */
 .acticle-title {
   font-size: 25px;
   line-height: 30px;
   color: #ff5000;
 }
 
-/* line 37, ../sass/reset.scss */
+/* line 43, ../sass/reset.scss */
 .date {
   color: #cccccc;
   font-size: 14px;
 }
 
-/* line 41, ../sass/reset.scss */
+/* line 47, ../sass/reset.scss */
 .acticle-content {
   color: #333333;
 }
 
-/* line 44, ../sass/reset.scss */
+/* line 50, ../sass/reset.scss */
 .featured {
   padding: 15px;
   color: #fff;
 }
 
-/* line 48, ../sass/reset.scss */
+/* line 54, ../sass/reset.scss */
 .tags-item {
   padding: 5px;
 }
 
-/* line 51, ../sass/reset.scss */
+/* line 57, ../sass/reset.scss */
 .tags-name {
   color: #fff;
 }
 
-/* line 54, ../sass/reset.scss */
+/* line 60, ../sass/reset.scss */
 .tags-title {
   font-weight: bold;
   color: #fff;
 }
 
-/* line 58, ../sass/reset.scss */
+/* line 64, ../sass/reset.scss */
 .tags-link {
   color: #fff;
 }
 
-/* line 62, ../sass/reset.scss */
+/* line 68, ../sass/reset.scss */
 #trigger {
   font-weight: bold;
 }
 
-/* line 65, ../sass/reset.scss */
+/* line 71, ../sass/reset.scss */
 .page-title {
   color: #00ac6b;
   font-size: 30px;
 }
 
-/* line 69, ../sass/reset.scss */
+/* line 75, ../sass/reset.scss */
 .footer {
   background: #303338;
   position: absolute;
@@ -98,9 +104,15 @@ li {
   height: 180px;
   margin-top: -180px;
   width: 100%;
+  color: #8b919b;
 }
 
-/* line 79, ../sass/reset.scss */
+/* line 85, ../sass/reset.scss */
+.footer a {
+  color: #8b919b;
+}
+
+/* line 88, ../sass/reset.scss */
 .this-tag {
   background: #35d699;
   color: #fff;
@@ -115,23 +127,36 @@ li {
   margin: 7px 10px 0px 0px;
 }
 
-/* line 92, ../sass/reset.scss */
+/* line 101, ../sass/reset.scss */
 .readmore {
   height: 25px;
   display: block;
 }
 
-/* line 96, ../sass/reset.scss */
+/* line 105, ../sass/reset.scss */
 .nav-link {
   text-align: center;
 }
 
-/* line 99, ../sass/reset.scss */
+/* line 108, ../sass/reset.scss */
 .danger {
   margin-left: 10px;
 }
 
-/* line 103, ../sass/reset.scss */
+/* line 112, ../sass/reset.scss */
 .icon-small {
-  font-size: 14px !important;
+  font-size: 15px !important;
+}
+
+/* line 115, ../sass/reset.scss */
+.icon-middle {
+  font-size: 30px !important;
+}
+
+/* line 119, ../sass/reset.scss */
+.copyright {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  font-size: 14px;
 }
