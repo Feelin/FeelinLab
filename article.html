@@ -4,25 +4,28 @@ title: Article
 name: article
 tags: [web,js,html,css]
 ---
+<div class="row page">
 
-<div class="row">
 <div class="col-9">
+<div class="row">
+
   <h1 class="page-title">最新文章</h1>
   <ul class="posts">
   <hr>
     {% for post in site.categories[page.name] %}
-      <li class="acticle-box" class="{{ post.categories }}"> 
+      <li class="acticle-box {{post.tags[0]}}" class="{{ post.categories }}"> 
         <div class="this-tag pull-left">{{ post.tags[0] }}</div>
         <span class="acticle-title" >{{ post.title }}</span> 
         <span class="date pull-right">{{ post.date | date_to_string }}</span>
-        <div class="acticle-content">{{ post.excerpt }}</div>
-      </li>
-      <div class="pull-right">
+        <p class="acticle-content">{{ post.excerpt }}</p>
+        <div class="pull-right">
         <a class="readmore" href="{{ site.baseurl }}{{ post.url }}">继续阅读 <i class="iconfont icon-jinru icon-small"></i></a>
       </div>
       <hr>
+      </li>
     {% endfor %}
   </ul>
+</div>
 </div>
 
 <div class="col-3">
@@ -32,7 +35,7 @@ tags: [web,js,html,css]
      {% for pagetag in page.tags %}
         {% if pagetag == tags[0] %}
           <div class="tags-item">
-           <a class="tags-name" href="#"> {{ tags | first }} </a>
+           <a class="tags-name" href="javascript:void(0);"> {{ tags | first }} </a>
            <span class="tags-size" href="#">({{ tags | last | size }})</span>
           </div>
         {% endif %}
@@ -43,4 +46,6 @@ tags: [web,js,html,css]
     {% endfor %} 
     </div>
 </div>
+
 </div>
+
