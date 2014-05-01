@@ -2,7 +2,6 @@ $color-warm:#ff5000;
 $color-cold:#00AC6B;
 $color-date:#999;
 $color-text:#333333;
-$acticle-height:253px;
 $color-footer:#303338;
 $dark:#00AC6B;
 $light:#35D699;
@@ -36,7 +35,6 @@ li {
     list-style-type: none;
 }
 .acticle-box {
-    max-height: $acticle-height;
     overflow: hidden;
 }
 .acticle-title {
@@ -82,6 +80,7 @@ p{
 .page-title {
     color: $color-cold;
     font-size: 30px;
+    text-align: center;
 }
 .footer {
     background: #303338;

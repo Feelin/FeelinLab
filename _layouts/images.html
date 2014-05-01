@@ -1,0 +1,63 @@
+{% include header.html %} 
+<link rel="stylesheet" href="{{ site.baseurl }}/public/css/syntax.css">
+<!-- Furatto core CSS -->
+<link href="{{ site.baseurl }}/public/css/normalize.css" rel="stylesheet">
+<link href="{{ site.baseurl }}/public/css/furatto.min.css" rel="stylesheet">
+<link href="{{ site.baseurl }}/public/css/furatto_overrides.css" rel="stylesheet">
+<link href="{{ site.baseurl }}/public/css/stylesheets/reset.css" rel="stylesheet">
+<link rel="stylesheet" href="{{ site.baseurl }}/public/css/icon/iconfont.css">
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+    </head>
+    <body >
+
+<nav class="navigation-bar">
+<ul class="brand-section">
+  <li class="brand-name">
+   <a href="{{ site.baseurl }}/"id="trigger"><i class="iconfont icon-shouye"></i> &nbsp;{{ site.name }}</a>
+  </li>
+  <li class="menu-toggle">
+   <a href="#"></a>
+  </li>
+</ul>
+<ul>
+  <li class="divider"></li>
+  <li class="nav-link">
+    <a href="{{ site.baseurl }}/pages/design.html">
+    <i class="iconfont icon-chuangyi"> </i>设计</a>
+  </li>
+  <li class="divider"></li>
+  <li class="nav-link">
+    <a href="{{ site.baseurl }}/pages/article.html"  class="button danger three-d">
+    <i class="iconfont icon-yongyan"></i>文章</a>
+  </li>
+  <li class="divider"></li>
+  <li class="nav-link">
+    <a href="{{ site.baseurl }}/pages/code.html">
+    <i class="iconfont icon-daimawenjian"> </i>代码</a>
+  </li>
+  <li class="divider"></li>
+  <li class="nav-link">
+    <a href="{{ site.baseurl }}/pages/images.html">
+    <i class="iconfont icon-tupian"> </i>图片</a>
+  </li>
+  <li class="divider"></li>
+</ul> 
+</nav>
+<div class="container">
+
+            {{ content }}
+
+</div>
+
+{% include footer.html %} 
+
+<!--includes javascript at the bottom so the page loads faster-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="{{ site.baseurl }}/public/js/furatto.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="{{ site.baseurl }}/public/js/custom.js"></script>
+</body>
+</html>
