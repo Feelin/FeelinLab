@@ -47,6 +47,10 @@ li {
     color: $color-date;
     font-size: 14px;
 }
+p{
+    color: $color-text;
+    font-size: 17px;
+}
 .acticle-content {
     color: $color-text;
 }
@@ -126,8 +130,33 @@ li {
     color: #666;
     word-spacing: white;
 }
+
 .resume {
     text-align: right;
     margin-top: 80px;
 }
+pre {
+  border: 1px solid #ddd;
+  background-color: #eef;
+  padding: 0 .4em;
+  line-height: 22px;
+}
+code {
+  border: 1px solid #ddd;
+  background-color: #eef;
+  padding: 0 .2em;
+  line-height: 22px;
+}
+pre code {
+  border: none;
+}
+pre.terminal {
+  border: 1px solid #000;
+  background-color: #333;
+  color: #FFF;
+}
+pre.terminal code {
+  background-color: #333;
+}
+
 
