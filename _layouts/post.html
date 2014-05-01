@@ -5,12 +5,12 @@ layout: article
     <div class="col-9">
     <article>
         <div class="this-tag pull-left">{{ page.tags[0] }}</div>
-        <span class="acticle-title">{{ page.title }}</span>
-        <span class="date">{{ page.date | date_to_string }}</span>        
+        <span class="acticle-title">{{ page.title }}</span>      
         <hr>
         <div class="page-content">
         {{ content }}
         </div>
+        <span class="date pull-right">{{ page.date | date_to_string }}</span>  
     </article>
     </div>
     <div class="col-3">
@@ -20,8 +20,9 @@ layout: article
         <span class="tags-title"><i class="iconfont icon-lianjie icon-small"></i>&nbsp;相关文章</span>
     <ul class="arc-list">
         {% for post in tags.last %}
-            <li><a class="tags-link" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-            <span class="pull-right">{{ post.date | date:"%d/%m/%Y"}}</span></li>
+            <li>
+                <a class="tags-link" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+            </li>
         {% endfor %}
     {% endif %}
     {% endfor %} 

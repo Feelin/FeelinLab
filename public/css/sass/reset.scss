@@ -1,13 +1,14 @@
 $color-warm:#ff5000;
 $color-cold:#00AC6B;
-$color-date:#cccccc;
+$color-date:#999;
 $color-text:#333333;
 $acticle-height:253px;
 $color-footer:#303338;
 $dark:#00AC6B;
 $light:#35D699;
 $footer-text:#8B919B;
-
+::selection {color:#A64215;background:#66EBB9;}
+::-moz-selection {color:#A64215;background:#66EBB9;}
 hr{
     margin: 5px 0;
 }
@@ -50,6 +51,8 @@ li {
 p{
     color: $color-text;
     font-size: 17px;
+    padding: 5px;
+    margin: 0;
 }
 .acticle-content {
     color: $color-text;

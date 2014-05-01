@@ -1,0 +1,47 @@
+---
+layout: post
+categories: article
+tags: web
+---
+
+  chrome无疑是我最喜爱的浏览器，不过在新版的ubuntu14.04-Gnome系统下会有些问题，一定的小概率会引起linux死机，目前无解。但是这依然不能阻止我在linux下用chrome，因为chrome有很多非常好的扩展工具。下面是一些我在使用的工具。
+
+`AdBlock`屏蔽广告的，不用说很多人都在用。
+
+`Close Similar Tabs`可以一次关闭同个域下的所有网站，比较方便
+
+`ColorZilla`前端必备取色器
+
+`EditThisCookie`查看cookie的，同样是前端开发必备
+
+`Enable Copy`有这个百度文库随便复制
+
+`jQuery API Browser`jquery的API文档
+
+`jQuery Shell`允许你在浏览器里随便跑jquery语句
+
+`MeasureIt!`测量元素大小距离,很好用的尺子
+
+`Momentum`新标签页背景图，图片都很赞！
+
+`Pocket (formerly Read It Later)`我当收藏夹用的
+
+`Postman - REST Client`可以方便地发起post请求
+
+`Pretty Beautiful Javascript`格式化被压缩的javascript代码
+
+`Proxy SwitchySharp`代理工具，配合goagent翻墙用
+
+`QR Code`将当前页面的URL生成二维码，调试手机端页面时就不用输入一串地址了
+
+`Session Buddy`类似与EditThisCookie，不过是查看session的
+
+`Window Resizer`调整窗口大小，简单地模拟不同客户端的页面情况
+
+`印象笔记·剪藏`看到好多文章可以用这个保存进印象笔记
+
+That is all,Have fun！
+---
+
+
+

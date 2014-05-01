@@ -17,7 +17,7 @@ tags: [web,idea,life]
         <div class="this-tag pull-left">{{ post.tags[0] }}</div>
         <span class="acticle-title" >{{ post.title }}</span> 
         <span class="date pull-right">{{ post.date | date_to_string }}</span>
-        <p class="acticle-content">{{ post.excerpt }}</p>
+        {{ post.excerpt }}
         <div class="pull-right">
         <a class="readmore" href="{{ site.baseurl }}{{ post.url }}">继续阅读 <i class="iconfont icon-jinru icon-small"></i></a>
       </div>
