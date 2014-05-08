@@ -18,4 +18,16 @@ var resizeHeight = function (){
         $(tag).css("display","block");
         resizeHeight();
     });
+
+    $("article img").on("click",function(){
+        var src = $(this).attr("src");
+        console.log(src);
+        $(".lightbox").css("display","block");
+        $(".bigpic").attr("src",src).css("display","block");
+    });
+
+    $(".lightbox").on("click",function(){
+        $(this).css("display","none");
+        $(".bigpic").css("display","none");
+    });
 });

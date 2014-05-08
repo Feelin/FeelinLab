@@ -1,0 +1,40 @@
+---
+layout: post
+categories: code
+tags: opencv
+---
+
+最近项目需要用到图像处理，就学了一下opencv，跑了几个demo觉得还是挺有趣的。先说一下我的项目需求，之前我们已经实现了用_kinect_手势控制[AR-Drone2.0][ARDrone]四轴飞行器，现在我们要自己DIY六轴飞行器，并且实现自动追踪某个特定的物体。这里面涉及到的图像处理部分打算用*opencv*来实现，因为opencv比较成熟，资料比较多，而且可以方便移植到ARM上面。下面说一下开发过程。
+
+开发环境我装的是最新的ubuntu14.04-Gnome版本，而opencv安装的`opencv2.4.9`，安装过程参考了CSDN两篇写的很详细的博文[Ubuntu 12.04下安装OpenCV 2.4.2][install]和[pkg-config的用法][pkg-config],就算按照教程一步步来还是会遇到一些问题，不过不用怕，提权root限操作或者删除缓存的cache文件通常就能解决。
+
+安装好了之后跑了一些opencv人脸识别的demo，出来一个lena图就算成功了。接着进入cpp文件夹想找一下有什么适合拿来改的程序，结果发现这个文件夹里没有批量编译的脚本，于是我便很愚蠢地手动输入命令一个个编译，在终端中输入`g++ demo.cpp -o demo.o pkg-config --libs --cflags opencv`。编译到最后觉得这个办法太蠢了，还是自己写的shell脚本吧，进入c文件夹找到*build_all.sh*来参考一下，结果发现这个脚本是可以处理c++文件的。。。。好囧，那为什么不放一个到cpp的文件夹里啊！
+
+用shell脚本批量编译后一个个试了一下demo，发现做追踪比较合适的有两个，一个是`motempl.c`，功能如图
+<div class="row">
+<div class="col-6"><img src="{{site.baseurl}}/public/images/pic/2014-05-08 19:54:31 的截屏.png" style="width:400px;height:210px;"></div>
+<div class="col-6"><img src="{{site.baseurl}}/public/images/pic/2014-05-08 19:58:29 的截屏.png" style="width:400px;height:210px;"></div>
+</div>
+
+红色圆圈圈出来的是移动物体，圆圈内的指针表明物体移动的方向。这个程序效果比较酷炫，可以捕获到移动的物体，可是延迟太过明显，如果移植到ARM上更加不敢想象。
+另一个比较适合的程序是`camshiftdemo.cpp`，这个程序的运行效果如下图
+<div class="row">
+<div class="col-6"><img src="{{site.baseurl}}/public/images/pic/2014-05-08 19:53:06 的截屏.png" style="width:400px;height:210px;"></div>
+<div class="col-6"><img src="{{site.baseurl}}/public/images/pic/2014-05-08 19:53:21 的截屏.png" style="width:400px;height:210px;"></div>
+</div>
+
+我让程序追踪我的手，并在屏幕上用蓝色方框画出来，右图是做了二值化处理后的图像。在终端里我输出的是被追踪物体的中心点*XY*坐标。
+
+这个程序的原理先计算出被追踪物体的直方图特征，然后反投影到原图像中，并递归地求出最优的近似区域。不过这个程序有个bug，就是被追踪的物体一旦从屏幕上消失程序就会崩溃。这个bug很好解决，只要在`if( trackWindow.area() <= 1 )`的条件判断中加上一句`trackObject = 0;`就可以了。
+
+然后接下要做的工作就是去掉所有的gui并移植到ARM上面了。
+
+最近还看到一个国外博士做的追踪效果稳定得令人发指，叫[OpenTLD][opentld]，有空再看看这个东西。
+
+[ARDrone]:http://cdn.ardrone2.parrot.com/
+[install]:http://blog.csdn.net/lqhbupt/article/details/7913513
+[pkg-config]:http://blog.csdn.net/suochao90/article/details/7291587
+[opentld]:http://personal.ee.surrey.ac.uk/Personal/Z.Kalal/tld.html
+
+
+	
