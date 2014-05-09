@@ -1,8 +1,8 @@
 ---
-layout: code
+layout: default
 title: 代码
 name: code
-tags: [js,html,css,PHP,C,C++,opencv,Node.Js]
+tags: [js,html,css,PHP,C,C++,opencv,Node.Js,jekyll]
 ---
 <div class="row page">
 
@@ -13,7 +13,7 @@ tags: [js,html,css,PHP,C,C++,opencv,Node.Js]
   <ul class="posts">
   <hr>
     {% for post in site.categories[page.name] %}
-      <li class="acticle-box {{post.tags[0]}}" class="{{ post.categories }}"> 
+      <li class="acticle-box {{post.tags[0]}}"> 
         <div class="this-tag pull-left">{{ post.tags[0] }}</div>
         <span class="acticle-title" >{{ post.title }}</span> 
         <span class="date pull-right">{{ post.date | date_to_string }}</span>

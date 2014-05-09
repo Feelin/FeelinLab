@@ -1,5 +1,5 @@
 ---
-layout: design
+layout: default
 title: 设计
 name: design
 tags: [PS]
@@ -13,14 +13,16 @@ tags: [PS]
   <ul class="posts">
   <hr>
     {% for post in site.categories[page.name] %}
-      <li class="acticle-box {{post.tags[0]}}" class="{{ post.categories }}"> 
+      <li class="acticle-box {{post.tags[0]}}"> 
         <div class="this-tag pull-left">{{ post.tags[0] }}</div>
         <span class="acticle-title" >{{ post.title }}</span> 
         <span class="date pull-right">{{ post.date | date_to_string }}</span>
         {{ post.excerpt }}
         <div class="pull-right">
-        <a class="readmore" href="{{ site.baseurl }}{{ post.url }}">继续阅读 <i class="iconfont icon-jinru icon-small"></i></a>
-      </div>
+          <a class="readmore" href="{{ site.baseurl }}{{ post.url }}">继续阅读 
+          <i class="iconfont icon-jinru icon-small"></i>
+          </a>
+        </div>
       <hr>
       </li>
     {% endfor %}
