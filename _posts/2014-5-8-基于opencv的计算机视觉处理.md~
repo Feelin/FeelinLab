@@ -29,7 +29,7 @@ tags: opencv
 
 然后接下要做的工作就是去掉所有的gui并移植到ARM上面了。
 
-最近还看到一个国外博士做的追踪效果稳定得令人发指，叫[OpenTLD][opentld]，有空再看看这个东西。
+> 最近还看到一个国外博士做的追踪效果稳定得令人发指，叫[OpenTLD][opentld]，有空再看看这个东西。
 
 [ARDrone]:http://cdn.ardrone2.parrot.com/
 [install]:http://blog.csdn.net/lqhbupt/article/details/7913513

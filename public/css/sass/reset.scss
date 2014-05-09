@@ -28,6 +28,7 @@ body {
     padding: 0;
     background: #fffeff;
     font-family: "微软雅黑";
+    letter-spacing: 0.02em;
 }
 .container {
     margin-top: 20px;
@@ -41,7 +42,7 @@ li {
     overflow: hidden;
 }
 .acticle-title {
-    font-size: 25px;
+    font-size: 24px;
     line-height: 30px;
     color: $color-warm;
 }
@@ -51,9 +52,11 @@ li {
 }
 p{
     color: $color-text;
-    font-size: 17px;
+    font-size: 16px;
     padding: 5px;
     margin: 0;
+    line-height: 22px;
+    letter-spacing: 0.06em;
 }
 .acticle-content {
     color: $color-text;
@@ -106,7 +109,7 @@ p{
     margin-bottom: 5px;
     height: 20px;
     line-height: 20px;
-    margin: 7px 10px 0px 0px;
+    margin: 5px 10px 0px 0px;
     font-weight: bold;
     box-shadow: 1px 1px #ccc;
 }
@@ -149,7 +152,7 @@ pre {
   line-height: 22px;
 }
 code {
-    padding: 2px 6px 2px;
+    padding: 1px 4px;
     border: 1px solid #dddddd;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
@@ -158,10 +161,11 @@ code {
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
     font-family: Monaco, "DejaVu Sans Mono", "Courier New", monospace;
-    font-size: 15px;
+    font-size: 14px;
     color: #555;
     line-height: 22px;
     background: #fff;
+    margin: 0 2px;
 }
 pre code {
   border: none;

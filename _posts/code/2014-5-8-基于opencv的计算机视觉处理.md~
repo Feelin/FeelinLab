@@ -4,11 +4,11 @@ categories: code
 tags: opencv
 ---
 
-最近项目需要用到图像处理，就学了一下opencv，跑了几个demo觉得还是挺有趣的。先说一下我的项目需求，之前我们已经实现了用_kinect_手势控制[AR-Drone2.0][ARDrone]四轴飞行器，现在我们要自己DIY六轴飞行器，并且实现自动追踪某个特定的物体。这里面涉及到的图像处理部分打算用*opencv*来实现，因为opencv比较成熟，资料比较多，而且可以方便移植到ARM上面。下面说一下开发过程。
+最近项目需要用到图像处理，就学了一下opencv，跑了几个demo觉得还是挺有趣的。先说一下我的项目需求，之前我们已经实现了用_kinect_手势控制[AR-Drone2.0][ARDrone]四轴飞行器，现在我们要自己DIY六轴飞行器，并且实现自动追踪某个特定的物体。这里面涉及到的图像处理部分打算用**opencv**来实现，因为opencv比较成熟，资料比较多，而且可以方便移植到ARM上面。下面说一下开发过程。
 
 开发环境我装的是最新的ubuntu14.04-Gnome版本，而opencv安装的`opencv2.4.9`，安装过程参考了CSDN两篇写的很详细的博文[Ubuntu 12.04下安装OpenCV 2.4.2][install]和[pkg-config的用法][pkg-config],就算按照教程一步步来还是会遇到一些问题，不过不用怕，提权root限操作或者删除缓存的cache文件通常就能解决。
 
-安装好了之后跑了一些opencv人脸识别的demo，出来一个lena图就算成功了。接着进入cpp文件夹想找一下有什么适合拿来改的程序，结果发现这个文件夹里没有批量编译的脚本，于是我便很愚蠢地手动输入命令一个个编译，在终端中输入`g++ demo.cpp -o demo.o pkg-config --libs --cflags opencv`。编译到最后觉得这个办法太蠢了，还是自己写的shell脚本吧，进入c文件夹找到*build_all.sh*来参考一下，结果发现这个脚本是可以处理c++文件的。。。。好囧，那为什么不放一个到cpp的文件夹里啊！
+安装好了之后跑了一些opencv人脸识别的demo，出来一个lena图就算成功了。接着进入cpp文件夹想找一下有什么适合拿来改的程序，结果发现这个文件夹里没有批量编译的脚本，于是我便很愚蠢地手动输入命令一个个编译，在终端中输入`g++ demo.cpp -o demo.o pkg-config --libs --cflags opencv`。编译到最后觉得这个办法太蠢了，还是自己写的shell脚本吧，进入c文件夹找到**build_all.sh**来参考一下，结果发现这个脚本是可以处理c++文件的。。。。好囧，那为什么不放一个到cpp的文件夹里啊！
 
 用shell脚本批量编译后一个个试了一下demo，发现做追踪比较合适的有两个，一个是`motempl.c`，功能如图
 <div class="row">
@@ -29,7 +29,7 @@ tags: opencv
 
 然后接下要做的工作就是去掉所有的gui并移植到ARM上面了。
 
-最近还看到一个国外博士做的追踪效果稳定得令人发指，叫[OpenTLD][opentld]，有空再看看这个东西。
+> 最近还看到一个国外博士做的追踪效果稳定得令人发指，叫[OpenTLD][opentld]，有空再看看这个东西。
 
 [ARDrone]:http://cdn.ardrone2.parrot.com/
 [install]:http://blog.csdn.net/lqhbupt/article/details/7913513
